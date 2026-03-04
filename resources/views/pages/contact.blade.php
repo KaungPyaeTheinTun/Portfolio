@@ -19,7 +19,7 @@
           <a href="mailto:kaungpyaethaintun@gmail.com" class="contact-item">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+                <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
               </svg>
             </div>
             <div>
@@ -27,11 +27,11 @@
               <div class="contact-item-val">kaungpyaethaintun@gmail.com</div>
             </div>
           </a>
-          
+
           <a href="https://www.linkedin.com/in/kaung-pyae-thein-tun-4aab183b4/" target="_blank" class="contact-item">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
               </svg>
             </div>
             <div>
@@ -39,11 +39,11 @@
               <div class="contact-item-val">linkedin.com/in/Kaung-Pyae-Thein-Tun</div>
             </div>
           </a>
-          
+
           <a href="https://github.com/KaungPyaeTheinTun" target="_blank" class="contact-item">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
               </svg>
             </div>
             <div>
@@ -58,22 +58,22 @@
       <div class="reveal" style="transition-delay:0.15s">
 
         @if(session('success'))
-          <div class="alert-success">&#x2713; {{ session('success') }}</div>
+        <div class="alert-success">&#x2713; {{ session('success') }}</div>
         @endif
 
-        <form action="{{ route('contact.store') }}" method="POST">
+        <form action="{{ route('contact.store') }}" method="POST" id="contact-form">
           @csrf
           <div class="form-row">
             <div class="form-group">
               <label>Name</label>
               <input type="text" name="name" value="{{ old('name') }}"
-                     class="{{ $errors->has('name') ? 'is-invalid' : '' }}" placeholder="John">
+                class="{{ $errors->has('name') ? 'is-invalid' : '' }}" placeholder="John">
               @error('name')<div class="field-error">{{ $message }}</div>@enderror
             </div>
             <div class="form-group">
               <label>Email</label>
               <input type="email" name="email" value="{{ old('email') }}"
-                     class="{{ $errors->has('email') ? 'is-invalid' : '' }}" placeholder="john@example.com">
+                class="{{ $errors->has('email') ? 'is-invalid' : '' }}" placeholder="john@example.com">
               @error('email')<div class="field-error">{{ $message }}</div>@enderror
             </div>
           </div>
@@ -86,15 +86,61 @@
           <div class="form-group">
             <label>Message</label>
             <textarea name="message" class="{{ $errors->has('message') ? 'is-invalid' : '' }}"
-                      placeholder="">{{ old('message') }}</textarea>
+              placeholder="">{{ old('message') }}</textarea>
             @error('message')<div class="field-error">{{ $message }}</div>@enderror
           </div>
 
-          <button type="submit" class="form-submit">Send Message &rarr;</button>
+          {{-- Submit Button --}}
+          {{-- Submit Button --}}
+          <button type="submit" class="form-submit" id="submit-btn">
+            {{-- Default state --}}
+            <span id="btn-default" style="display:inline-flex;align-items:center;gap:0.5rem;">
+              Send Message &rarr;
+            </span>
+
+            {{-- Loading state --}}
+            <span id="btn-loading" style="display:none;align-items:center;gap:0.65rem;">
+              <style>
+                @keyframes spin {
+                  from {
+                    transform: rotate(0deg);
+                  }
+
+                  to {
+                    transform: rotate(360deg);
+                  }
+                }
+              </style>
+              <svg style="animation:spin 0.8s linear infinite;flex-shrink:0;"
+                width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+              </svg>
+              Sending...
+            </span>
+          </button>
+
         </form>
       </div>
 
     </div>
   </div>
 </section>
+
+@push('scripts')
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function() {
+    const btn = document.getElementById('submit-btn');
+    const btnDefault = document.getElementById('btn-default');
+    const btnLoading = document.getElementById('btn-loading');
+
+    // Disable button & show spinner
+    btn.disabled = true;
+    btnDefault.style.display = 'none';
+    btnLoading.style.display = 'inline-flex';
+  });
+</script>
+@endpush
+
 @endsection

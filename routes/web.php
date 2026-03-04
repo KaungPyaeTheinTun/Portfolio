@@ -19,7 +19,7 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 require __DIR__.'/auth.php';
 
 // Admin
-Route::prefix('admin')->name('admin.')->middleware(['auth'])->group(function () {
+Route::prefix('kaungpyae')->name('admin.')->middleware(['auth'])->group(function () {
     Route::get('/',                              [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('projects', AdminProjectController::class);
     Route::get('messages',                       [MessageController::class, 'index'])->name('messages.index');

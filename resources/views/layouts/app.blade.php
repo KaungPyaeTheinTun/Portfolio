@@ -6,7 +6,7 @@
   <title>@yield('title', 'KP2T — Full Stack Developer')</title>
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/jpeg" href="{{ asset('images/_ (1).jpeg') }}">
+  <link rel="icon" type="image/jpeg" href="{{ asset('images/1.jpeg') }}">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
   <style>
     :root {
@@ -374,9 +374,9 @@
         <span class="tooltip">LinkedIn</span>
       </a>
       <a href="https://x.com/Kaungpyaet77503" target="_blank" class="social-btn" data-tooltip="X (Twitter)">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
         <span class="tooltip">X (Twitter)</span>
       </a>
       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kaungpyaethaintun@gmail.com" class="social-btn" data-tooltip="Email">

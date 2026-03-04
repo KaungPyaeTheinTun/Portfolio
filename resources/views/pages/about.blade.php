@@ -13,9 +13,9 @@
       <div class="about-img-wrap reveal">
         <div class="about-img-inner float-anim">
           @if(file_exists(public_path('images/pf.jpeg')))
-            <img src="{{ asset('images/pf.jpeg') }}" alt="KaungPyaeTheinTun">
+          <img src="{{ asset('images/pf.jpeg') }}" alt="KaungPyaeTheinTun">
           @else
-            <span style="font-size:5rem;position:relative;z-index:1">&#x1F468;&#x200D;&#x1F4BB;</span>
+          <span style="font-size:5rem;position:relative;z-index:1">&#x1F468;&#x200D;&#x1F4BB;</span>
           @endif
           <div style="position:absolute;bottom:0;left:0;right:0;padding:1.5rem;z-index:2;">
             <div style="height:2px;background:linear-gradient(90deg,var(--blue),transparent);margin-bottom:0.5rem;border-radius:1px;"></div>
@@ -39,7 +39,7 @@
         {{-- Tech Tags --}}
         <div class="about-tags">
           @foreach(['DigitalOcean','Docker','MySQL','Redis','Nginx','Laravel','PHP','ASP.NET','Vue.js'] as $tech)
-            <span class="tag">{{ $tech }}</span>
+          <span class="tag">{{ $tech }}</span>
           @endforeach
         </div>
 
@@ -47,8 +47,8 @@
         <div style="margin-top:2.5rem;">
           <div style="font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.18em;color:var(--blue-bright);text-transform:uppercase;margin-bottom:1.5rem;">Experience</div>
           @foreach([
-            ['2026–Present', 'Senior Full Stack Developer', 'ItVisionHub Company Limited'],
-            ['2024–2025',    'Junior Web Developer',  'ItVisionHub Company Limited'],
+          ['2026–Present', 'Senior Full Stack Developer', 'ItVisionHub Company Limited'],
+          ['2024–2025', 'Junior Web Developer', 'ItVisionHub Company Limited'],
           ] as $exp)
           <div style="display:flex;gap:1.5rem;margin-bottom:1.2rem;padding-bottom:1.2rem;border-bottom:1px solid var(--border);">
             <div style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--blue-bright);white-space:nowrap;padding-top:0.15rem;">{{ $exp[0] }}</div>
@@ -61,7 +61,10 @@
         </div>
 
         <div style="margin-top:2rem;">
-          <a href="{{ asset('files/resume.pdf') }}" download class="btn-primary">Download CV &darr;</a>
+          <!-- <a href="{{ asset('files/resume.pdf') }}" download class="btn-primary">Download CV &darr;</a> -->
+          <span class="btn-primary" style="opacity:0.4;cursor:not-allowed;" title="CV coming soon">
+            CV Coming Soon
+          </span>
         </div>
       </div>
 
