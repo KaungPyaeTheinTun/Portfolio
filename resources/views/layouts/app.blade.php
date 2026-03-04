@@ -144,6 +144,89 @@
     .form-submit { width: 100%; padding: 1rem; background: var(--blue); color: #fff; border: none; border-radius: 4px; font-family: 'Syne', sans-serif; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; cursor: none; transition: background 0.3s, box-shadow 0.3s, transform 0.2s; }
     .form-submit:hover { background: var(--blue-bright); box-shadow: 0 0 32px var(--blue-glow); transform: translateY(-1px); }
 
+    /* Tooltip Styles */
+    .footer-socials {
+        position: relative;
+    }
+
+    .social-btn {
+        position: relative;
+    }
+
+    .social-btn .tooltip {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-8px);
+        background: var(--blue);
+        color: #fff;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 0.4rem 0.8rem;
+        border-radius: 4px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        pointer-events: none;
+        z-index: 1000;
+    }
+
+    .social-btn .tooltip::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--blue) transparent transparent transparent;
+    }
+
+    .social-btn:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(-12px);
+    }
+
+    /* Platform-specific tooltip colors on hover */
+    .social-btn[data-tooltip="GitHub"]:hover .tooltip {
+        background: #333;
+    }
+    .social-btn[data-tooltip="GitHub"]:hover .tooltip::after {
+        border-color: #333 transparent transparent transparent;
+    }
+
+    .social-btn[data-tooltip="LinkedIn"]:hover .tooltip {
+        background: #0077b5;
+    }
+    .social-btn[data-tooltip="LinkedIn"]:hover .tooltip::after {
+        border-color: #0077b5 transparent transparent transparent;
+    }
+
+    .social-btn[data-tooltip="X (Twitter)"]:hover .tooltip {
+        background: #000;
+    }
+    .social-btn[data-tooltip="X (Twitter)"]:hover .tooltip::after {
+        border-color: #000 transparent transparent transparent;
+    }
+
+    .social-btn[data-tooltip="Email"]:hover .tooltip {
+        background: #ea4335;
+    }
+    .social-btn[data-tooltip="Email"]:hover .tooltip::after {
+        border-color: #ea4335 transparent transparent transparent;
+    }
+
+    /* Hide tooltips on mobile */
+    @media (max-width: 768px) {
+        .social-btn .tooltip {
+            display: none;
+        }
+    }
     footer { position: relative; z-index: 1; background: var(--surface); border-top: 1px solid var(--border); padding: 3rem 2.5rem; }
     .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
     .footer-logo { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: #fff; }
@@ -276,28 +359,32 @@
     <div class="footer-logo">KaungPyaeTheinTun<span>.</span></div>
     <div class="footer-copy">&copy; {{ date('Y') }} KaungPyaeTheinTun. Crafted with Laravel.</div>
     <div class="footer-socials">
-      <a href="https://github.com/KaungPyaeTheinTun" target="_blank" class="social-btn">
+      <a href="https://github.com/KaungPyaeTheinTun" target="_blank" class="social-btn" data-tooltip="GitHub">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
         </svg>
+        <span class="tooltip">GitHub</span>
       </a>
-      <a href="https://linkedin.com/in/yourname" target="_blank" class="social-btn">
+      <a href="https://www.linkedin.com/in/kaung-pyae-thein-tun-4aab183b4/" target="_blank" class="social-btn" data-tooltip="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
           <rect x="2" y="9" width="4" height="12"></rect>
           <circle cx="4" cy="4" r="2"></circle>
         </svg>
+        <span class="tooltip">LinkedIn</span>
       </a>
-      <a href="https://twitter.com/yourname" target="_blank" class="social-btn">
+      <a href="https://x.com/Kaungpyaet77503" target="_blank" class="social-btn" data-tooltip="X (Twitter)">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
         </svg>
+        <span class="tooltip">X (Twitter)</span>
       </a>
-      <a href="mailto:kaungpyaethaintun@gmail.com" class="social-btn">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kaungpyaethaintun@gmail.com" class="social-btn" data-tooltip="Email">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
           <polyline points="22,6 12,13 2,6"></polyline>
         </svg>
+        <span class="tooltip">Email</span>
       </a>
     </div>
   </div>
