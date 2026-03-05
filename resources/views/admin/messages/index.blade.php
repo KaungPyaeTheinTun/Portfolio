@@ -75,21 +75,34 @@
         <button type="submit" title="Mark as read"
           style="width:32px;height:32px;background:rgba(59,130,246,0.15);border:1px solid var(--border);border-radius:6px;color:var(--blue-bright);font-size:0.85rem;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;justify-content:center;"
           onmouseover="this.style.background='rgba(59,130,246,0.3)'"
-          onmouseout="this.style.background='rgba(59,130,246,0.15)'">✓</button>
+          onmouseout="this.style.background='rgba(59,130,246,0.15)'">
+          <!-- Envelope with Check Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" />
+            <polyline points="22 7 12 13 2 7" />
+            <polyline points="16 19 19 22 23 18" />
+          </svg>
+        </button>
       </form>
       @endif
 
-      {{-- Delete — uses the shared component --}}
+      {{-- Delete --}}
       <button type="button" title="Delete"
         onclick="openDeleteModal(
-                '{{ route('admin.messages.destroy', $message) }}',
-                '{{ addslashes($message->name) }}\'s message',
-                'Subject: {{ addslashes($message->subject ?? 'No subject') }}'
-              )"
+            '{{ route('admin.messages.destroy', $message) }}',
+            '{{ addslashes($message->name) }}\'s message',
+            'Subject: {{ addslashes($message->subject ?? 'No subject') }}'
+          )"
         style="width:32px;height:32px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2);border-radius:6px;color:#f87171;font-size:0.85rem;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;justify-content:center;"
         onmouseover="this.style.background='rgba(239,68,68,0.25)'"
         onmouseout="this.style.background='rgba(239,68,68,0.1)'">
-        &#x1F5D1;
+        <!-- Trash Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="3 6 5 6 21 6" />
+          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+          <line x1="10" y1="11" x2="10" y2="17" />
+          <line x1="14" y1="11" x2="14" y2="17" />
+        </svg>
       </button>
 
     </div>
@@ -106,7 +119,16 @@
 
   @empty
   <div style="text-align:center;padding:4rem;color:var(--muted);">
-    <div style="font-size:2.5rem;margin-bottom:1rem;">&#x1F4EC;</div>
+    <div style="font-size:2.5rem;margin-bottom:1rem; display:flex; justify-content:center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: #9ca3af;">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" />
+        <path d="M14 2v6h6" />
+        <line x1="9" y1="15" x2="15" y2="15" />
+        <line x1="9" y1="11" x2="17" y2="11" />
+        <circle cx="18" cy="18" r="3" />
+        <line x1="15" y1="21" x2="21" y2="15" />
+      </svg>
+    </div>
     <div style="font-weight:600;color:var(--text);margin-bottom:0.4rem;">No messages yet</div>
     <div style="font-size:0.85rem;">Messages from your contact form will appear here.</div>
   </div>

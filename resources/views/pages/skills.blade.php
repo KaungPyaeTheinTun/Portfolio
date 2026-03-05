@@ -45,7 +45,7 @@
         <div class="skill-cat">Database</div>
         @foreach([
           ['MySQL',      90],
-          ['MMSQL', 85],
+          ['MSSQL', 85],
           ['Redis',      50],
         ] as [$name, $pct])
         <div class="skill-item">

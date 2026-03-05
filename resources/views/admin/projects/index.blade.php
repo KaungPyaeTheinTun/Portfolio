@@ -14,9 +14,9 @@
     </p>
   </div>
   <a href="{{ route('admin.projects.create') }}"
-    style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--blue);color:#fff;padding:0.7rem 1.4rem;border-radius:6px;font-size:0.82rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.2s,box-shadow 0.2s;"
+    style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(59,130,246,0.12);color:#fff;padding:0.7rem 1.4rem;border-radius:6px;font-size:0.82rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.2s,box-shadow 0.2s;"
     onmouseover="this.style.background='#60a5fa';this.style.boxShadow='0 0 24px rgba(59,130,246,0.4)'"
-    onmouseout="this.style.background='var(--blue)';this.style.boxShadow='none'">
+    onmouseout="this.style.background='rgba(59,130,246,0.12)';this.style.boxShadow='none'">
     &#x2795; Add Project
   </a>
 </div>
@@ -166,7 +166,13 @@
   </div>
   @empty
   <div style="text-align:center;padding:5rem 2rem;color:var(--muted);">
-    <div style="font-size:3rem;margin-bottom:1rem;">&#x1F4C2;</div>
+    <div style="font-size:3rem;margin-bottom:1rem; display:flex; justify-content:center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: #9ca3af;">
+        <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+        <line x1="12" y1="10" x2="12" y2="16" />
+        <line x1="9" y1="13" x2="15" y2="13" />
+      </svg>
+    </div>
     <div style="color:var(--text);font-weight:700;font-size:1.1rem;margin-bottom:0.5rem;">No projects yet</div>
     <div style="font-size:0.85rem;margin-bottom:1.5rem;">Add your first project to get started.</div>
     <a href="{{ route('admin.projects.create') }}"
