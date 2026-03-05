@@ -12,8 +12,8 @@
       {{-- Profile Image --}}
       <div class="about-img-wrap reveal">
         <div class="about-img-inner float-anim">
-          @if(file_exists(public_path('images/pf.jpeg')))
-          <img src="{{ asset('images/pf.jpeg') }}" alt="KaungPyaeTheinTun">
+          @if(file_exists(public_path('images/p.jpeg')))
+          <img src="{{ asset('images/p.jpeg') }}" alt="KaungPyaeTheinTun">
           @else
           <span style="font-size:5rem;position:relative;z-index:1">&#x1F468;&#x200D;&#x1F4BB;</span>
           @endif

@@ -299,8 +299,8 @@
 
         <!-- Profile photo -->
         <div style="position:relative;z-index:2;width:320px;height:320px;border-radius:50%;overflow:hidden;border:4px solid var(--dark);">
-          @if(file_exists(public_path('images/pf.jpeg')))
-          <img src="{{ asset('images/pf.jpeg') }}"
+          @if(file_exists(public_path('images/p.jpeg')))
+          <img src="{{ asset('images/p.jpeg') }}"
             alt="KaungPyaeTheinTun"
             style="width:100%;height:100%;object-fit:cover;object-position:top;">
           @else
