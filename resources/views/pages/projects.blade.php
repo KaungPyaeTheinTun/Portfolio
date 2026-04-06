@@ -4,7 +4,6 @@
 @section('content')
 
 <section id="projects" style="padding-top:9rem;background:var(--surface);">
-  <div class="grid-line"></div>
   <div class="container">
 
     {{-- Section Header --}}

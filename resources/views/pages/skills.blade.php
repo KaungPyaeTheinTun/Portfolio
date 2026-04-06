@@ -17,6 +17,7 @@
           ['Bootstrap',      90],
           ['Tailwind CSS',    92],
           ['Vue.js',          50],
+          ['React.js',          50],
         ] as [$name, $pct])
         <div class="skill-item">
           <div class="skill-name">{{ $name }} <span class="skill-pct">{{ $pct }}%</span></div>

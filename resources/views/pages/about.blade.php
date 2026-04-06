@@ -3,7 +3,6 @@
 
 @section('content')
 <section id="about" style="padding-top:9rem">
-  <div class="grid-line"></div>
   <div class="container">
     <div class="section-label reveal">001 &mdash; About Me</div>
     <h2 class="section-title reveal">I build things that <em>matter</em></h2>
@@ -38,7 +37,7 @@
 
         {{-- Tech Tags --}}
         <div class="about-tags">
-          @foreach(['DigitalOcean','Docker','MySQL','Redis','Nginx','Laravel','PHP','ASP.NET','Vue.js'] as $tech)
+          @foreach(['DigitalOcean','Docker','MySQL','Redis','Nginx','Laravel','PHP','ASP.NET','Vue.js','React.js'] as $tech)
           <span class="tag">{{ $tech }}</span>
           @endforeach
         </div>
@@ -47,8 +46,8 @@
         <div style="margin-top:2.5rem;">
           <div style="font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.18em;color:var(--blue-bright);text-transform:uppercase;margin-bottom:1.5rem;">Experience</div>
           @foreach([
-          ['2026–Present', 'Senior Full Stack Developer', 'ItVisionHub Company Limited'],
-          ['2024–2025', 'Junior Web Developer', 'ItVisionHub Company Limited'],
+          ['2026–Present', 'Senior Full Stack Developer', 'ITVisionHub Company Limited'],
+          ['2024–2025', 'Junior Web Developer', 'ITVisionHub Company Limited'],
           ] as $exp)
           <div style="display:flex;gap:1.5rem;margin-bottom:1.2rem;padding-bottom:1.2rem;border-bottom:1px solid var(--border);">
             <div style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--blue-bright);white-space:nowrap;padding-top:0.15rem;">{{ $exp[0] }}</div>

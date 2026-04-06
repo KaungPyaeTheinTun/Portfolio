@@ -262,9 +262,9 @@
     <div>
       <p class="hero-eyebrow" style="font-family:'DM Mono',monospace;font-size:0.8rem;color:var(--blue-bright);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.5rem;">Available for work &nbsp;&middot;&nbsp; Based in Yangon</p>
 
-      <h1 class="hero-title" style="font-size:clamp(3rem, 6vw, 4.5rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;color:#fff;margin-bottom:1.5rem;">
+      <h1 class="hero-title" style="font-family:'DM Mono',monospace;font-size:clamp(3rem, 6vw, 4.5rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;color:#fff;margin-bottom:1.5rem;">
         Full Stack<br>
-        <span class="accent" style="color:var(--blue-bright);">Developer</span>
+        <span class="accent" style="font-family:'DM Mono',monospace;color:var(--blue-bright);">Developer</span>
       </h1>
 
       <p class="hero-sub" style="font-size:clamp(1rem, 2vw, 1.2rem);color:var(--muted);margin-bottom:2rem;max-width:500px;">
@@ -360,7 +360,6 @@ $totalSlides = $chunks->count();
 @endphp
 
 <section id="projects" style="background:var(--surface);padding:7rem 2.5rem;">
-  <div class="grid-line"></div>
   <div class="container" style="max-width:1200px;margin:0 auto;">
 
     <!-- Section Header -->

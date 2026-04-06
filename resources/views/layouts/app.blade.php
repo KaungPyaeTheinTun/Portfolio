@@ -22,7 +22,7 @@
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { background: var(--dark); color: var(--text); font-family: 'Syne', sans-serif; overflow-x: hidden; cursor: none; }
+    body { background: var(--dark); color: var(--text); font-family: 'Lato', sans-serif; overflow-x: hidden; cursor: none; }
 
     #cursor { position: fixed; top: 0; left: 0; z-index: 9999; pointer-events: none; mix-blend-mode: screen; }
     #cursor .dot { width: 8px; height: 8px; background: var(--blue-bright); border-radius: 50%; transform: translate(-50%,-50%); }
@@ -37,7 +37,7 @@
 
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.25rem 2.5rem; display: flex; align-items: center; justify-content: space-between; backdrop-filter: blur(18px); background: rgba(8,12,20,0.7); border-bottom: 1px solid var(--border); transition: box-shadow 0.3s; }
     nav.scrolled { box-shadow: 0 0 40px rgba(59,130,246,0.12); }
-    .nav-logo { font-family: 'Instrument Serif', serif; font-size: 1.5rem; color: #fff; letter-spacing: -0.02em; }
+    .nav-logo { font-family: 'Lato', serif; font-size: 1.5rem; color: #fff; letter-spacing: -0.02em; }
     .nav-logo span { color: var(--blue-bright); }
     .nav-links { display: flex; gap: 2.5rem; list-style: none; }
     .nav-links a { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-decoration: none; position: relative; transition: color 0.3s; }
@@ -235,8 +235,6 @@
     .footer-socials { display: flex; gap: 1rem; }
     .social-btn { width: 36px; height: 36px; border-radius: 4px; background: var(--dark); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1rem; transition: border-color 0.3s, box-shadow 0.3s; text-decoration: none; }
     .social-btn:hover { border-color: var(--blue); box-shadow: 0 0 16px var(--blue-glow); }
-
-    .grid-line { position: absolute; top: 0; left: 50%; width: 1px; height: 100%; background: linear-gradient(180deg, transparent, var(--border), transparent); pointer-events: none; }
 
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s, transform 0.7s; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
